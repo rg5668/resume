@@ -55,7 +55,7 @@ header a:hover {
     width:auto;
     margin:0 auto;
     background: #ffffff;
-    max-width: 1550px;
+    max-width: 1500px;
 }
 
 header {
@@ -129,7 +129,7 @@ header ul > li {
         display: block;
         width: 96%;
         height: 100%;
-        margin: 60px 20px 20px 20px;
+        margin: 20px 20px 20px 20px;
         text-align: center;
         line-height: 1.87;
     }
@@ -184,15 +184,18 @@ header ul > li {
     line-height: 1.87;
 }
 
-.career-margin-t3 {
-    margin-top: 2%;
+.career-half-width {
+    width: 50%;
+}
+
+.career-margin-t4 {
+    margin-top: 4%;
 }
 .padding-r-14 {
     padding-right: 14%;
 }
 .skills-img {
-    display: block;
-    width: 55%;
+    width: 60%;
     background-color: #fff;
 }
 
@@ -231,6 +234,7 @@ header ul > li {
     font-size: 18px;
     font-weight: 600;
 }
+
 .icon-img {
     width: 20%;
 }
@@ -260,4 +264,20 @@ header ul > li {
 .aboutme-layout-sub {
     border-bottom: 1px solid #808080;
     padding-bottom: 3%;
+}
+
+.skills-font {
+    width: 30%;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.archiving-width {
+    width: 100%;
+    line-height: 1.87;
+    display: inline-flex;
+}
+
+.archiving-icon {
+    width: 25%;
 }
