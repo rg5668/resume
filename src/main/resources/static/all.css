@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Fira+Sans+Extra+Condensed:wght@500&family=Nunito+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    color:#000;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+}
+
+.fn-font {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #004040;
+}
+
+html, body {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+header a {
+    color: #ffffff;
+}
+
+header a:hover {
+    color: #000000;
+    cursor: pointer;
+}
+.container {
+    width:auto;
+    margin:0 auto;
+}
+
+.container-sub {
+    width:auto;
+    margin:0 auto;
+    background: #ffffff;
+    max-width: 1550px;
+}
+
+header {
+    width: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+header > nav {
+    padding-left: 32%;
+    width: 74%;
+    height: 100%;
+    /*position: fixed;*/
+}
+
+nav {
+    padding-left: 20%;
+    align-items: center;
+    width: 60%;
+}
+
+header ul {
+    width: 145%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul > li {
+    font-size:22px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header-div {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    width: 100%;
+    height: 80px;
+    background: #004040;
+}
+
+.header-logo {
+    padding-left: 40px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.content-layout {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+
+    .content-layout {
+        justify-content: space-between;
+        align-items: center;
+        display: block;
+        width: 96%;
+        height: 100%;
+        margin: 60px 20px 20px 20px;
+        text-align: center;
+        line-height: 1.87;
+    }
+
+    .side-btn {
+        height: 16px;
+        margin: 22px 0;
+        display: block;
+        top: 0;
+        right: 0;
+        width: 20px;
+    }
+    .side-btn_bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #000;
+    }
+
+    .side-btn_bar--second {
+        top: 6.5px;
+    }
+
+    .side-btn_bar--third {
+        top: 13px;
+        bottom: 0;
+    }
+}
+
+.m-right {
+    float: right;
+    position: relative;
+    margin-right: 20px;
+}
+
+.float-left {
+    float: right;
+    position: relative;
+}
+
+.career-content {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+}
+
+.career-width {
+    width: 100%;
+    line-height: 1.87;
+}
+
+.career-margin-t3 {
+    margin-top: 2%;
+}
+.padding-r-14 {
+    padding-right: 14%;
+}
+.skills-img {
+    display: block;
+    width: 55%;
+    background-color: #fff;
+}
+
+.skills-content {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    text-align: -webkit-center;
+}
+
+.skills-area {
+    display: inline-flex;
+    align-items: center;
+}
+
+.select-content {
+    border: 1px solid;
+    padding: 5%;
+    margin-bottom: 3%;
+    width: 100%;
+    height: 100%;
+}
+
+.resume-tag {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    border-bottom: 1px solid;
+}
+
+.icon-content {
+    margin-top: 300px;
+    text-align: center;
+    justify-content: space-between;
+    line-height: 4;
+    font-size: 18px;
+    font-weight: 600;
+}
+.icon-img {
+    width: 20%;
+}
+
+.font-white {
+    color: #ffffff;
+}
+
+.content-font {
+    font-size: 20px;
+    line-height: 1.87;
+    font-weight: 400;
+}
+
+.title-font {
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: 1.87;
+    text-decoration: underline;
+}
+
+.aboutme-layout {
+    display: inline-flex;
+    margin-bottom: 5%;
+}
+
+.aboutme-layout-sub {
+    border-bottom: 1px solid #808080;
+    padding-bottom: 3%;
+}
