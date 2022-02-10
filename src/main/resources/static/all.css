@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
 
 * {
-    margin:0;
-    padding:0;
-    color:#000;
+    margin: 0;
+    padding: 0;
+    color: #000;
     font-family: 'Noto Sans KR', sans-serif;
     box-sizing: border-box;
 }
@@ -29,6 +29,10 @@ html, body {
 
 }
 
+li {
+    list-style-type: none;
+}
+
 ul {
     list-style: none;
 }
@@ -46,14 +50,15 @@ header a:hover {
     color: #000000;
     cursor: pointer;
 }
+
 .container {
-    width:auto;
-    margin:0 auto;
+    width: auto;
+    margin: 0 auto;
 }
 
 .container-sub {
-    width:auto;
-    margin:0 auto;
+    width: auto;
+    margin: 0 auto;
     background: #ffffff;
     max-width: 1500px;
 }
@@ -88,11 +93,12 @@ header ul {
 }
 
 header ul > li {
-    font-size:22px;
+    font-size: 22px;
     height: 100%;
     display: flex;
     align-items: center;
 }
+
 .header-div {
     position: fixed;
     display: flex;
@@ -142,6 +148,7 @@ header ul > li {
         right: 0;
         width: 20px;
     }
+
     .side-btn_bar {
         position: absolute;
         top: 0;
@@ -191,9 +198,11 @@ header ul > li {
 .career-margin-t4 {
     margin-top: 4%;
 }
+
 .padding-r-14 {
     padding-right: 14%;
 }
+
 .skills-img {
     width: 60%;
     background-color: #fff;
@@ -212,7 +221,6 @@ header ul > li {
 }
 
 .select-content {
-    border: 1px solid;
     padding: 5%;
     margin-bottom: 3%;
     width: 100%;
@@ -279,5 +287,21 @@ header ul > li {
 }
 
 .archiving-icon {
-    width: 25%;
+    width: 40%;
+}
+
+#my_modal {
+    display: none;
+    width: 80%;
+    height: 80%;
+    padding: 20px 60px;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-radius: 3px;
+}
+
+#my_modal .modal_close_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
