@@ -34,7 +34,7 @@ function modal(id) {
     document.body.append(bg);
 
     // 닫기 버튼 처리, 시꺼먼 레이어와 모달 div 지우기
-    modal.querySelector('.modal_close_btn').addEventListener('click', function() {
+    modal.querySelector('.modal_close_btn').addEventListener('click', function () {
         bg.remove();
         modal.style.display = 'none';
     });
@@ -57,15 +57,47 @@ function modal(id) {
 }
 
 // Element 에 style 한번에 오브젝트로 설정하는 함수 추가
-Element.prototype.setStyle = function(styles) {
+Element.prototype.setStyle = function (styles) {
     for (var k in styles) this.style[k] = styles[k];
     return this;
 };
 
-window.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('popup_open_btn').addEventListener('click', function() {
+
+
+window.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('popup_open_btn').addEventListener('click', function () {
         // 모달창 띄우기
         modal('my_modal');
     });
+    document.getElementById('popup_open_btn1').addEventListener('click', function () {
+        // 모달창 띄우기
+        modal('my_modal1');
+    });
+    document.getElementById('popup_open_btn2').addEventListener('click', function () {
+        // 모달창 띄우기
+        modal('my_modal2');
+    });
+    document.getElementById('popup_open_btn3').addEventListener('click', function () {
+        // 모달창 띄우기
+        modal('my_modal3');
+    });
+})
+
+
+
+window.addEventListener('DOMContentLoaded', function () {
+    var mySwiper = new Swiper('.swiper-container',{
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        on: {
+            slideChangeTransitionEnd: function(){
+//alert(this.activeIndex);
+                SetPageNumber(this.activeIndex+1);
+            },
+        },
+    })
+
 })
 
