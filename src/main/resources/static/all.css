@@ -124,6 +124,20 @@ header ul > li {
     text-align: center;
 }
 
+.intro-icon {
+    width: 6%;
+}
+
+@media (max-width: 414px) {
+    .select-a {
+        font-size: 36px !important;
+    }
+
+    .intro-icon {
+        width: 18% !important;
+    }
+}
+
 @media (max-width: 1024px) {
     nav {
         display: none;
@@ -172,7 +186,7 @@ header ul > li {
         max-width: 80% !important;
     }
 
-    #my_modal {
+    #my_modal #my_modal1 #my_modal2 #my_modal3 {
         height: 50vh !important;
     }
 
@@ -190,17 +204,86 @@ header ul > li {
         top: 25px;
         right: 25px;
     }
-}
 
-.m-right {
-    float: right;
-    position: relative;
-    margin-right: 20px;
-}
+    header {
+        height: 120px !important;
+    }
+    .header-div {
+        height: 120px !important;
+    }
 
-.float-left {
-    float: right;
-    position: relative;
+    #hamburger-wrapper {
+        display: flex;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        right: 2%;
+    }
+
+    .burger {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .burger,
+    .burger:before,
+    .burger:after {
+        padding: 0;
+        background-color: #fff;
+        width: 80%;
+        height: 8px;
+        transition: margin .1s .2s, transform .2s;
+    }
+
+    .burger:before,
+    .burger:after {
+        margin: 0;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .burger:before {
+        margin-top: -12px;
+    }
+
+    .burger:after {
+        margin-top: 12px;
+    }
+
+    /* STYLES FOR OUR BURGER WHEN THE MENU OPENS */
+    .open .burger {
+        transform: rotate(45deg);
+    }
+
+    .open .burger,
+    .open .burger:before,
+    .open .burger:after {
+        transition: margin .2s, transform .1s .2s;
+    }
+
+    .open .burger:before,
+    .open .burger:after {
+        margin-top: 0;
+    }
+
+    .open .burger:after {
+        transform: rotate(-90deg)
+    }
+
+    .select-a {
+        font-size: 36px !important;
+    }
+
+    .intro-icon {
+        width: 18% !important;
+    }
 }
 
 .career-content {
@@ -345,7 +428,6 @@ header ul > li {
 #my_modal {
     display: none;
     width: 80%;
-    height: 80%;
     background-color: #fefefe;
     border: 1px solid #888;
     border-radius: 22px;
@@ -387,7 +469,6 @@ header ul > li {
 #my_modal1 {
     display: none;
     width: 80%;
-    height: 80%;
     background-color: #fefefe;
     border: 1px solid #888;
     border-radius: 22px;
@@ -416,7 +497,6 @@ header ul > li {
 #my_modal2 {
     display: none;
     width: 80%;
-    height: 80%;
     background-color: #fefefe;
     border: 1px solid #888;
     border-radius: 22px;
@@ -445,7 +525,6 @@ header ul > li {
 #my_modal3 {
     display: none;
     width: 80%;
-    height: 80%;
     background-color: #fefefe;
     border: 1px solid #888;
     border-radius: 22px;
@@ -473,7 +552,7 @@ header ul > li {
 
 .swiper-container{
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     /* margin: 20px auto; */
     max-width: 60%;
     overflow: hidden;

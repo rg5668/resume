@@ -101,3 +101,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
 })
 
+window.addEventListener('DOMContentLoaded', function () {
+    const wrapper = document.getElementById('hamburger-wrapper')
+
+    wrapper.addEventListener("click", () => {
+        wrapper.classList.toggle("open")
+    })
+})
