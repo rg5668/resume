@@ -204,7 +204,7 @@ header ul > li {
 
     .swiper-container{
         max-width: 80% !important;
-        height:75vh !important;
+        height:60vh !important;
     }
 
     #my_modal #my_modal1 #my_modal2 #my_modal3 {
@@ -315,7 +315,6 @@ header ul > li {
 
 .career-width {
     width: 100%;
-    line-height: 1.87;
     display: inline-flex;
     margin-top: 2%;
     border: 1px solid;
@@ -449,7 +448,7 @@ header ul > li {
 #my_modal {
     display: none;
     width: 80%;
-    height: 100vh;
+    height: 92vh;
     background-color: #fefefe;
     border: 1px solid #888;
     border-radius: 22px;
@@ -491,7 +490,7 @@ header ul > li {
 #my_modal1 {
     display: none;
     width: 80%;
-    height: 100vh;
+    height: 92vh;
     background-color: #fefefe;
     border: 1px solid #888;
     border-radius: 22px;
@@ -520,7 +519,7 @@ header ul > li {
 #my_modal2 {
     display: none;
     width: 80%;
-    height: 100vh;
+    height: 92vh;
     background-color: #fefefe;
     border: 1px solid #888;
     border-radius: 22px;
@@ -549,7 +548,7 @@ header ul > li {
 #my_modal3 {
     display: none;
     width: 80%;
-    height: 100vh;
+    height: 92vh;
     background-color: #fefefe;
     border: 1px solid #888;
     border-radius: 22px;
@@ -617,12 +616,13 @@ span > a {
     transform: translate(-50%, -50%);
     font-weight: 700;
     font-size: 30px;
+    width: 85%;
 }
 
 .modal-text-bottom {
     position: absolute;
     display: block;
-    top: 85%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 500;
