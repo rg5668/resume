@@ -107,4 +107,6 @@ window.addEventListener('DOMContentLoaded', function () {
     wrapper.addEventListener("click", () => {
         wrapper.classList.toggle("open")
     })
+
 })
+

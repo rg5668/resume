@@ -139,8 +139,28 @@ header ul > li {
 }
 
 @media (max-width: 1024px) {
-    nav {
+
+    header ul > li {
+        font-size: 55px;
+        padding: 30% 0% 0% 15%;
+        font-weight: 500;
+    }
+
+    .pc-ver {
         display: none;
+    }
+
+    nav {
+        padding-left: 0;
+        align-items: center;
+        width: 60%;
+    }
+
+    header ul {
+        width: 145%;
+        height: 100%;
+        display: inline-block;
+        justify-content: space-between;
     }
 
     .content-layout {
@@ -184,6 +204,7 @@ header ul > li {
 
     .swiper-container{
         max-width: 80% !important;
+        height:75vh !important;
     }
 
     #my_modal #my_modal1 #my_modal2 #my_modal3 {
@@ -221,6 +242,7 @@ header ul > li {
         padding: 0;
         position: absolute;
         right: 2%;
+        z-index: 99999;
     }
 
     .burger {
@@ -282,14 +304,13 @@ header ul > li {
     }
 
     .intro-icon {
-        width: 18% !important;
+        width: 12% !important;
     }
 }
 
 .career-content {
     display: flex;
     justify-content: space-between;
-    line-height: 2;
 }
 
 .career-width {
@@ -307,7 +328,7 @@ header ul > li {
 }
 
 .career-padding {
-    padding: 5%;
+    padding: 8%;
     border-bottom: 2px solid #808080;
 }
 
@@ -322,7 +343,7 @@ header ul > li {
 .skills-img {
     width: 100%;
     margin-left: 8%;
-    max-width: 16%;
+    max-width: 20%;
 }
 
 .skills-img1 {
@@ -402,7 +423,7 @@ header ul > li {
     border-radius: 20px;
     margin-top: -2px;
     color: #fff;
-    font-size: 1.4em;
+    font-size: 1.7em;
     font-weight: 400;
 }
 
@@ -428,6 +449,7 @@ header ul > li {
 #my_modal {
     display: none;
     width: 80%;
+    height: 100vh;
     background-color: #fefefe;
     border: 1px solid #888;
     border-radius: 22px;
@@ -469,6 +491,7 @@ header ul > li {
 #my_modal1 {
     display: none;
     width: 80%;
+    height: 100vh;
     background-color: #fefefe;
     border: 1px solid #888;
     border-radius: 22px;
@@ -497,6 +520,7 @@ header ul > li {
 #my_modal2 {
     display: none;
     width: 80%;
+    height: 100vh;
     background-color: #fefefe;
     border: 1px solid #888;
     border-radius: 22px;
@@ -525,6 +549,7 @@ header ul > li {
 #my_modal3 {
     display: none;
     width: 80%;
+    height: 100vh;
     background-color: #fefefe;
     border: 1px solid #888;
     border-radius: 22px;
@@ -587,21 +612,22 @@ span > a {
 .modal-text-top {
     position: absolute;
     display: block;
-    top: 7%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .modal-text-bottom {
     position: absolute;
     display: block;
-    top: 90%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 500;
     line-height: 1.87;
+    width: 90%;
 }
 
 .swiper-slide {
@@ -636,3 +662,4 @@ span > a {
     color:#fff;
     background: #007aff;
 }
+
